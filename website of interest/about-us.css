@@ -1,0 +1,99 @@
+.team {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 0;
+}
+.people {
+    text-align: center;
+    padding: 20px;
+    height: 45rem !important;
+}
+.one {
+    background-color: rgb(120, 87, 181);
+}
+.two {
+    background-color: rgb(135, 69, 69);
+}
+.three {
+    background-color: rgb(64, 193, 111);
+}
+.four {
+    background-color: rgb(209, 230, 109);
+}
+.five {
+    background-color: rgb(38, 37, 68);
+}
+.six {
+    background-color: rgb(153, 97, 60);
+}
+.team img {
+    position: relative;
+    height: 35rem;
+    top: 2rem;
+    border-radius: 1rem;
+    margin: 0;
+}
+.box {
+    transition: 0.3s;
+}
+.box:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+h1 {
+    margin-bottom: -1rem;
+    margin-top: 1.5rem;
+}
+h2 {
+    position: relative;
+    margin-left: 11.5rem;
+    margin-top: -3rem;
+    scale: 1.1;
+}
+#frame {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: solid 15px #c45454;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: -3px -3px 12px #b63a3a;
+    scale: 1.1;
+}
+#border {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: solid 70px white;
+    box-shadow: -3px -3px 12px #999;
+}
+.frame {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-top: solid 2px #aaa;
+    border-left: solid 2px #aaa;
+    border-bottom: solid 2px #ccc;
+    border-right: solid 2px #ccc;
+}
+#history {
+    background-color: #d9d892;
+    margin-top: -1.6rem;
+}
+
+.history {
+    display: flex;
+    margin-top: 3rem;
+}
+.history p {
+    font-family: Merriweather;
+    font-size: 1.4rem;
+    margin-left: 2rem !important;
+    color: rgb(0, 0, 0);
+}
+.pictures {
+    display: flex;
+}
