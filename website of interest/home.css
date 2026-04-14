@@ -7,6 +7,7 @@ body {
     background-color: rgb(233, 239, 154);
     width: 100%;
     min-height: 100vh;
+    padding-top: 70px;
 }
 a {
     text-decoration: none;
@@ -17,24 +18,21 @@ li {
 
 /* navbar start  */
 .custom-navbar {
-    background-color: rgb(222, 132, 166); /* or your color */
+    background-color: rgb(222, 132, 166);
     backdrop-filter: blur(10px);
 }
 
-/* LOGO SIZE */
 .logo {
     height: 50px;
     width: auto;
 }
 
-/* MOBILE LOGO */
 @media (max-width: 576px) {
     .logo {
         height: 40px;
     }
 }
 
-/* NAV LINK STYLE */
 .nav-link {
     font-weight: 500;
     transition: 0.3s;
@@ -44,25 +42,11 @@ li {
     color: #ff6b81;
 }
 
-/* FIX BODY OVERLAP (important for fixed navbar) */
-body {
-    padding-top: 70px;
-}
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 .text-azure {
     color: azure !important;
 }
 /*  nav bar end  */
 
-/* BACKGROUND */
-/* SECTION BACKGROUND */
 .cake-bg {
     min-height: 100vh;
     background-image: url('cake bg.png');
@@ -72,8 +56,6 @@ li {
     display: flex;
     align-items: center;
 }
-
-/* AWARDS RESPONSIVE SIZE */
 
 .awards {
     width: 100%;
@@ -152,35 +134,11 @@ li {
 }
 
 /* carousel section  */
-/* SECTION */
 .testimonial-section {
     background-color: rgba(233, 239, 154);
     border-radius: 1rem;
 }
 
-.awards {
-    scale: 3;
-}
-/* OUTER WRAPPER */
-.carousel {
-    overflow: hidden;
-    width: 100%;
-}
-
-/* MOVING TRACK (KEY FOR INFINITE LOOP) */
-.track {
-    display: flex;
-    width: max-content;
-    animation: scroll 30s linear infinite;
-    will-change: transform;
-}
-
-/* EACH GROUP */
-.group {
-    display: flex;
-}
-
-/* CARD STYLE */
 .testimonial-card {
     flex: 0 0 auto;
     width: 260px;
@@ -190,8 +148,27 @@ li {
     background: #fff;
     transition: transform 0.3s ease;
 }
+.awards {
+    scale: 3;
+}
+/* OUTER WRAPPER */
+.carousel {
+    /* overflow: hidden; */
+    width: 100%;
+}
 
-/* HOVER EFFECT */
+.track {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+}
+
+.group {
+    display: flex;
+}
+
+/* iframe hover  */
 .testimonial-card:hover {
     transform: scale(1.05);
 }
@@ -204,7 +181,6 @@ iframe:hover {
     opacity: 1;
 }
 
-/* IMAGE */
 .testimonial-card img {
     width: 70px;
     height: 70px;
@@ -212,13 +188,12 @@ iframe:hover {
     margin-bottom: 10px;
 }
 
-/* STARS */
 .stars {
     color: gold;
     font-size: 14px;
 }
 
-/* ANIMATION (IMPORTANT: 50% LOOP) */
+/* carousel animation  */
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -228,7 +203,6 @@ iframe:hover {
     }
 }
 
-/* 📱 MOBILE */
 @media (max-width: 576px) {
     .testimonial-card {
         width: 220px;
@@ -240,26 +214,22 @@ iframe:hover {
     }
 }
 
-/* 💻 TABLET */
 @media (min-width: 768px) {
     .testimonial-card {
         width: 240px;
     }
 }
 
-/* 🖥 DESKTOP */
 @media (min-width: 1200px) {
     .testimonial-card {
         width: 260px;
     }
 }
 
-/* ✨ OPTIONAL: pause on hover */
 .carousel:hover .track {
     animation-play-state: paused;
 }
 
-/* ✨ OPTIONAL: premium fade edges */
 .carousel {
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
@@ -360,14 +330,10 @@ iframe:hover {
 }
 /* button animation end */
 
-/* address start */
-
-/* SECTION BACKGROUND */
 .location-section {
     background-color: rgba(250, 74, 74, 0.8);
 }
 
-/* WAVE */
 .wave {
     width: 100%;
     line-height: 0;
@@ -383,14 +349,13 @@ iframe:hover {
 .wave path {
     fill: rgba(250, 74, 74, 0.8);
 }
-/* IMAGE */
+
 .location-img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
 }
 
-/* TEXT */
 .address h1 {
     color: black;
     font-weight: bold;
@@ -401,7 +366,6 @@ iframe:hover {
     color: #444;
 }
 
-/* MOBILE ADJUSTMENTS */
 @media (max-width: 576px) {
     .address {
         text-align: center;

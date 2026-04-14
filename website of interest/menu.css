@@ -12,24 +12,24 @@ body {
 }
 /* navbar start  */
 .custom-navbar {
-    background-color: rgb(222, 132, 166); /* or your color */
+    background-color: rgb(222, 132, 166); 
     backdrop-filter: blur(10px);
 }
 
-/* LOGO SIZE */
+
 .logo {
     height: 50px;
     width: auto;
 }
 
-/* MOBILE LOGO */
+
 @media (max-width: 576px) {
     .logo {
         height: 40px;
     }
 }
 
-/* NAV LINK STYLE */
+
 .nav-link {
     font-weight: 500;
     transition: 0.3s;
@@ -39,7 +39,7 @@ body {
     color: #ff6b81;
 }
 
-/* FIX BODY OVERLAP (important for fixed navbar) */
+
 body {
     padding-top: 70px;
 }

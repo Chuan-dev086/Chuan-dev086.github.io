@@ -4,20 +4,18 @@
     backdrop-filter: blur(10px);
 }
 
-/* LOGO SIZE */
 .logo {
     height: 50px;
     width: auto;
 }
 
-/* MOBILE LOGO */
+
 @media (max-width: 576px) {
     .logo {
         height: 40px;
     }
 }
 
-/* NAV LINK STYLE */
 .nav-link {
     font-weight: 500;
     transition: 0.3s;
@@ -27,7 +25,7 @@
     color: #ff6b81;
 }
 
-/* FIX BODY OVERLAP (important for fixed navbar) */
+
 body {
     padding-top: 70px;
     background-color: #d9d892;
@@ -45,7 +43,7 @@ li {
 }
 /*  nav bar end  */
 
-/* TITLE */
+
 .team-section {
     background-color: #d9d892;
     text-align: center;
@@ -66,14 +64,13 @@ li {
     font-size: 2.5rem;
 }
 
-/* TEAM */
+
 .people {
     text-align: center;
     padding: 15px;
     border-radius: 10px;
 }
 
-/* COLORS (keep your design) */
 .one {
     background: rgb(120, 87, 181);
 }
@@ -93,7 +90,7 @@ li {
     background: rgb(153, 97, 60);
 }
 
-/* IMAGE */
+
 .people img {
     border-radius: 1rem;
     max-height: 50px;
@@ -107,7 +104,7 @@ HOVER EFFECT */ .box {
     transform: scale(1.1);
 }
 
-/* NAME */
+
 .name {
     margin-top: 10px;
     padding: 5px 10px;
@@ -116,7 +113,7 @@ HOVER EFFECT */ .box {
     font-weight: bold;
 }
 
-/* YOUR COLORS */
+
 .name1 {
     color: rgb(237, 165, 65);
     background: rgba(78, 91, 133, 0.8);
@@ -142,7 +139,7 @@ HOVER EFFECT */ .box {
     background: rgba(34, 34, 35, 0.8);
 }
 
-/* HISTORY */
+
 .history-section {
     background-color: #d9d892;
 }
@@ -152,7 +149,7 @@ HOVER EFFECT */ .box {
     line-height: 1.8;
 }
 
-/* FRAME (FIXED VERSION) */
+
 .frame-box {
     border: 15px solid #c45454;
     box-shadow: -3px -3px 12px #b63a3a;
@@ -168,7 +165,7 @@ HOVER EFFECT */ .box {
     width: 100%;
 }
 
-/* 📱 MOBILE */
+
 @media (max-width: 576px) {
     .title-box {
         font-size: 1.6rem;
@@ -183,7 +180,7 @@ HOVER EFFECT */ .box {
     }
 }
 
-/* TITLE */
+
 .section-title {
     font-family: Oswald;
     font-size: 2.5rem;
@@ -193,7 +190,7 @@ HOVER EFFECT */ .box {
     border-radius: 2rem;
 }
 
-/* TEAM */
+
 .people {
     text-align: center;
     padding: 15px;
@@ -207,7 +204,7 @@ HOVER EFFECT */ .box {
     border-radius: 1rem;
 }
 
-/* COLORS */
+
 .one {
     background: rgb(120, 87, 181);
 }
@@ -227,7 +224,7 @@ HOVER EFFECT */ .box {
     background: rgb(153, 97, 60);
 }
 
-/* HOVER */
+
 .box {
     transition: 0.3s;
 }
@@ -236,7 +233,7 @@ HOVER EFFECT */ .box {
     transform: scale(1.1);
 }
 
-/* NAME */
+
 .name {
     font-weight: bold;
     border-radius: 20px;
@@ -244,13 +241,13 @@ HOVER EFFECT */ .box {
     display: inline-block;
 }
 
-/* HISTORY */
+
 .history-text {
     font-size: 1rem;
     line-height: 1.8;
 }
 
-/* FRAME (FIXED VERSION) */
+
 .frame-box {
     border: 15px solid #c45454;
     box-shadow: -3px -3px 12px #b63a3a;
@@ -266,7 +263,7 @@ HOVER EFFECT */ .box {
     width: 100%;
 }
 
-/* MOBILE */
+
 @media (max-width: 576px) {
     .section-title {
         font-size: 1.8rem;
