@@ -4,269 +4,229 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>P&P</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="home.css" />
         <link rel="stylesheet" href="header.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700\&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900\&family=Oleo+Script+Swash+Caps:wght@400;700\&family=Oswald:wght@200..700\&display=swap" rel="stylesheet" />
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200..700&display=swap");
+            #navbarNav a {
+                color: white !important;
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200..700&display=swap');
         </style>
     </head>
     <body>
-        <header>
-            <a href="home.html"> <img src="P_P (1).png" class="logo" /></a>
-            <ul>
-                <li><a href="menu.html" style="color: azure; font-family: oswald" class="header-link">Menu</a></li>
-                <li><a href="about-us.html" style="color: azure; font-family: oswald" class="header-link">About Us</a></li>
-                <li><a href="contact-us.html" style="color: azure; font-family: oswald" class="header-link">Contact Us</a></li>
-            </ul>
-        </header>
-        <section class="cake-bg">
-            <div class="background-pic">
-                <div class="motto">
-                    <h1 style="font-family: Oleo Script Swash Caps; font-size: 3.5rem !important; color: rgb(186, 27, 66)">Your pleasure, Our passion.</h1>
-                    <p style="font-family: Fredoka; font-size: 2rem; color: rgb(186, 27, 66)">
-                        Our cake café in Penang is a vibrant and cheerful spot <br />
-                        filled with color, sweetness, and fun. The playful décor <br />
-                        and cozy atmosphere create the perfect place to relax <br />
-                        and enjoy delicious treats. We offer a wide variety of <br />
-                        beautifully crafted cakes that are both eye-catching <br />
-                        and full of flavor. Whether you're hanging out with <br />
-                        friends or celebrating a special moment, the lively vibe <br />
-                        makes every visit enjoyable. It's a place where great <br />
-                        desserts and happy memories come together.
-                    </p>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="P_P (1).png" class="logo img-fluid" alt="P_P logo" />
+                </a>
+
+                <!-- TOGGLER -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAV LINKS -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center gap-lg-3">
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about-us.html" class="nav-link">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="awards">
-                    <img src="michilen logo.png" alt="Michelin Award" class="michelin-logo awards-logo" />
-                    <img src="traveller award.png" alt="Traveller Award" style="scale: 0.6; margin-left: 1rem" class="awards-logo" />
-                    <img src="world gourment.png" alt="World Gourment Award" style="scale: 1.2; margin-left: -5rem" class="awards-logo" />
+            </div>
+        </nav>
+
+        <!-- hero section  -->
+        <section class="cake-bg py-5">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row align-items-center">
+                    <!-- LEFT CONTENT -->
+                    <div class="col-12 col-lg-7 d-flex flex-column align-items-start">
+                        <!-- TEXT -->
+                        <div class="motto text-start w-100">
+                            <h1 class="text-start fw-bold hero-title" style="font-family: 'Oleo Script Swash Caps'; font-size: 3.5rem; color: rgb(186, 27, 66)">Your pleasure, Our passion.</h1>
+
+                            <p class="text-start mt-3 hero-text" style="font-family: Fredoka; font-size: 1.8 em; color: rgb(186, 27, 66)">
+                                Our cake café in Penang is a vibrant and cheerful spot filled with color, sweetness, 
+                                and fun.The playful décor and cozy atmosphere create the perfect place to relax and 
+                                enjoy delicious treats. We offer a wide variety of beautifully crafted cakes that 
+                                are both eye-catching and full of flavor. Whether you're hanging out with friends 
+                                or celebrating a special moment, the lively vibe makes every visit enjoyable. 
+                                It's a place where great desserts and happy memories come together. 
+                            </p>
+                        </div>
+
+                        <!-- BUTTON -->
+                        <div class="mt-4">
+                            <a class="btn btn-danger px-4 py-2" href="menu.html"> Check Our Menu </a>
+                        </div>
+
+                        <!-- AWARDS (NOW RESPONSIVE) -->
+                        
+                    </div>
                 </div>
-                <a class="btn-12" href="menu.html" style="color: azure">Check Our Menu</a>
             </div>
         </section>
-        <div class="carousel">
-            <div class="group">
-                <div class="card">
-                    <div class="reviews">
-                        <img src="kobe profile pic.png" alt="Kobe Bryant" />
-                        <h1>
-                            Kobe Bryant <br />
-                            <span class="role">Basketball Hall of Famer</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
+
+        <section class="py-5 testimonial-section">
+            <div class="carousel">
+                <div class="track">
+                    <!-- ================= GROUP 1 ================= -->
+                    <div class="group">
+                        <div class="card testimonial-card">
+                            <img src="kobe profile pic.png" class="rounded-circle" />
+                            <h5>Kobe Bryant</h5>
+                            <small>Basketball Hall of Famer</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Mamba mentality… I said one slice, ended up going overtime.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="cr7 profile pic.png" class="rounded-circle" />
+                            <h5>Cristiano Ronaldo</h5>
+                            <small>Football Legend</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“SIUUUUUUUUUUU, this cake is better than Messi!”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="diddy profile pic.png" class="rounded-circle" />
+                            <h5>Diddy</h5>
+                            <small>Rapper & Entrepreneur</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Even my baby oil can't top these cakes off.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="obama profile pic.png" class="rounded-circle" />
+                            <h5>Barack Obama</h5>
+                            <small>Former US President</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Let me be clear—these cakes are really, really good.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="billie profile pic.png" class="rounded-circle" />
+                            <h5>Billie Eilish</h5>
+                            <small>Singer & Songwriter</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Came for vibes, stayed for cake.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="pearly tan profile pic.png" class="rounded-circle" />
+                            <h5>Pearly Tan</h5>
+                            <small>Olympic Badminton Player</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Said one bite only… finished the whole cake.”</p>
+                        </div>
                     </div>
-                    <hr />
-                    <p>“Mamba mentality… I said one slice, ended up going overtime.”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="cr7 profile pic.png" alt="Cristiano Ronaldo" />
-                        <h1>
-                            Cristiano Ronaldo <br />
-                            <span class="role">Football Legend</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
+
+                    <!-- ================= GROUP 2 (DUPLICATE FOR LOOP) ================= -->
+                    <div class="group" aria-hidden="true">
+                        <div class="card testimonial-card">
+                            <img src="kobe profile pic.png" class="rounded-circle" />
+                            <h5>Kobe Bryant</h5>
+                            <small>Basketball Hall of Famer</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Mamba mentality… I said one slice, ended up going overtime.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="cr7 profile pic.png" class="rounded-circle" />
+                            <h5>Cristiano Ronaldo</h5>
+                            <small>Football Legend</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“SIUUUUUUUUUUU, this cake is better than Messi!”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="diddy profile pic.png" class="rounded-circle" />
+                            <h5>Diddy</h5>
+                            <small>Rapper & Entrepreneur</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Even my baby oil can't top these cakes off.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="obama profile pic.png" class="rounded-circle" />
+                            <h5>Barack Obama</h5>
+                            <small>Former US President</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Let me be clear—these cakes are really, really good.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="billie profile pic.png" class="rounded-circle" />
+                            <h5>Billie Eilish</h5>
+                            <small>Singer & Songwriter</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Came for vibes, stayed for cake.”</p>
+                        </div>
+
+                        <div class="card testimonial-card">
+                            <img src="pearly tan profile pic.png" class="rounded-circle" />
+                            <h5>Pearly Tan</h5>
+                            <small>Olympic Badminton Player</small>
+                            <div class="stars">★★★★★</div>
+                            <hr />
+                            <p>“Said one bite only… finished the whole cake.”</p>
+                        </div>
                     </div>
-                    <hr />
-                    <p>“SIUUUUUUUUUUU, This cake is better than messi!”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="diddy profile pic.png" alt="Diddy" />
-                        <h1>
-                            Diddy <br />
-                            <span class="role">Rapper and Entrepreneur</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>"Even my baby oil can't top these cakes off—Should of had more!"</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="obama profile pic.png" alt="Barack Obama" />
-                        <h1>
-                            Barack Obama <br />
-                            <span class="role">Former US President</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>“Let me be clear—these cakes are really, really good.”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="billie profile pic.png" alt="Billie Eilish" />
-                        <h1>
-                            Billie Eilish <br />
-                            <span class="role">Singer and Songwriter</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>“Came for vibes, stayed for cake. Now I'm emotionally attached.”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="pearly tan profile pic.png" alt="Pearly Tan " />
-                        <h1>
-                            Pearly Tan <br />
-                            <span class="role">Olympic Badminton Player</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>“Said one bite only… somehow finished the whole cake.”</p>
                 </div>
             </div>
-            <div aria-hidden="true" class="group">
-                <div class="card">
-                    <div class="reviews">
-                        <img src="kobe profile pic.png" alt="Kobe Bryant" />
-                        <h1>
-                            Kobe Bryant <br />
-                            <span class="role">Basketball Hall of Famer</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
+        </section>
+
+        <section class="location-section">
+            <div class="container py-5">
+                <div class="row align-items-center gy-4">
+                    <!-- IMAGE -->
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="P&P exterior.png" alt="Our Cafe" class="img-fluid location-img" />
                     </div>
-                    <hr />
-                    <p>“Mamba mentality… I said one slice, ended up going overtime.”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="cr7 profile pic.png" alt="Cristiano Ronaldo" />
-                        <h1>
-                            Cristiano Ronaldo <br />
-                            <span class="role">Football Legend</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
+                    <!-- ADDRESS + MAP -->
+                    <div class="col-12 col-lg-6 text-start address">
+                        <h1 class="fw-bold">Our Locations</h1>
+
+                        <p class="mb-4">No 33, Jalan Anson, 10400 George Town, Pulau Pinang</p>
+
+                        <!-- MAP -->
+                        <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281.34576414434605!2d100.32356546037926!3d5.418984977658105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3bceed5b96b%3A0x8e9c977b208d0d2d!2sNo%2033%2C%20Jalan%20Anson%2C%2010400%20George%20Town%2C%20Pulau%20Pinang!5e0!3m2!1sen!2smy!4v1775641019712!5m2!1sen!2smy"
+                                loading="lazy"
+                            >
+                            </iframe>
+                        </div>
                     </div>
-                    <hr />
-                    <p>“SIUUUUUUUUUUU, This cake is better than messi!”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="diddy profile pic.png" alt="Diddy" />
-                        <h1>
-                            Diddy <br />
-                            <span class="role">Rapper and Entrepreneur</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>"Even my baby oil can't top these cakes off—Should of had more!"</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="obama profile pic.png" alt="Barack Obama" />
-                        <h1>
-                            Barack Obama <br />
-                            <span class="role">Former US President</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>“Let me be clear—these cakes are really, really good.”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="billie profile pic.png" alt="Billie Eilish" />
-                        <h1>
-                            Billie Eilish <br />
-                            <span class="role">Singer and Songwriter</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>“Came for vibes, stayed for cake. Now I'm emotionally attached.”</p>
-                </div>
-                <div class="card">
-                    <div class="reviews">
-                        <img src="pearly tan profile pic.png" alt="Pearly Tan" />
-                        <h1>
-                            Pearly Tan <br />
-                            <span class="role">Olympic Badminton Player</span> <br />
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </h1>
-                    </div>
-                    <hr />
-                    <p>“Said one bite only… somehow finished the whole cake.”</p>
                 </div>
             </div>
-        </div>
-        <div class="wave">
-            <!-- SVG WAVE (TOP) -->
-            <svg viewBox="0 0 1440 120" class="wave-bottom">
-                <path d="M0,80 C300,0 1100,150 1440,80 L1440,120 L0,120 Z"></path>
-            </svg>
-            <div class="location">
-                <img src="P&P exterior.png" alt="Our Cafe" />
-                <div class="address">
-                    <h1>Our Locations</h1>
-                    <p>No 33, Jalan Anson, 10400 George Town, Pulau Pinang</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281.34576414434605!2d100.32356546037926!3d5.418984977658105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3bceed5b96b%3A0x8e9c977b208d0d2d!2sNo%2033%2C%20Jalan%20Anson%2C%2010400%20George%20Town%2C%20Pulau%20Pinang!5e0!3m2!1sen!2smy!4v1775641019712!5m2!1sen!2smy"
-                        width="600"
-                        height="450"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
-            </div>
-        </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

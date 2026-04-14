@@ -1,99 +1,282 @@
-.team {
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 0;
+/* navbar start  */
+.custom-navbar {
+    background-color: rgb(222, 132, 166); /* or your color */
+    backdrop-filter: blur(10px);
 }
-.people {
+
+/* LOGO SIZE */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* MOBILE LOGO */
+@media (max-width: 576px) {
+    .logo {
+        height: 40px;
+    }
+}
+
+/* NAV LINK STYLE */
+.nav-link {
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff6b81;
+}
+
+/* FIX BODY OVERLAP (important for fixed navbar) */
+body {
+    padding-top: 70px;
+    background-color: #d9d892;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.text-azure {
+    color: azure !important;
+}
+/*  nav bar end  */
+
+/* TITLE */
+.team-section {
+    background-color: #d9d892;
     text-align: center;
-    padding: 20px;
-    height: 45rem !important;
-}
-.one {
-    background-color: rgb(120, 87, 181);
-}
-.two {
-    background-color: rgb(135, 69, 69);
-}
-.three {
-    background-color: rgb(64, 193, 111);
-}
-.four {
-    background-color: rgb(209, 230, 109);
-}
-.five {
-    background-color: rgb(38, 37, 68);
-}
-.six {
-    background-color: rgb(153, 97, 60);
-}
-.team img {
-    position: relative;
-    height: 35rem;
-    top: 2rem;
-    border-radius: 1rem;
-    margin: 0;
 }
 .box {
+    align-items: center;
+}
+
+.gallery-section {
+    background-color: #d9d892;
+}
+.title-box {
+    font-family: Oswald;
+    background-color: #d9d892;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+}
+
+/* TEAM */
+.people {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* COLORS (keep your design) */
+.one {
+    background: rgb(120, 87, 181);
+}
+.two {
+    background: rgb(135, 69, 69);
+}
+.three {
+    background: rgb(64, 193, 111);
+}
+.four {
+    background: rgb(209, 230, 109);
+}
+.five {
+    background: rgb(38, 37, 68);
+}
+.six {
+    background: rgb(153, 97, 60);
+}
+
+/* IMAGE */
+.people img {
+    border-radius: 1rem;
+    max-height: 50px;
+    object-fit: cover;
+}
+
+HOVER EFFECT */ .box {
     transition: 0.3s;
 }
 .box:hover {
-    transform: scale(1.2);
-    z-index: 1;
-}
-h1 {
-    margin-bottom: -1rem;
-    margin-top: 1.5rem;
-}
-h2 {
-    position: relative;
-    margin-left: 11.5rem;
-    margin-top: -3rem;
-    scale: 1.1;
-}
-#frame {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    border: solid 15px #c45454;
-    max-width: 600px;
-    margin: 40px auto;
-    box-shadow: -3px -3px 12px #b63a3a;
-    scale: 1.1;
-}
-#border {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    border: solid 70px white;
-    box-shadow: -3px -3px 12px #999;
-}
-.frame {
-    display: block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: auto;
-    border-top: solid 2px #aaa;
-    border-left: solid 2px #aaa;
-    border-bottom: solid 2px #ccc;
-    border-right: solid 2px #ccc;
-}
-#history {
-    background-color: #d9d892;
-    margin-top: -1.6rem;
+    transform: scale(1.1);
 }
 
-.history {
-    display: flex;
-    margin-top: 3rem;
+/* NAME */
+.name {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
 }
-.history p {
-    font-family: Merriweather;
-    font-size: 1.4rem;
-    margin-left: 2rem !important;
-    color: rgb(0, 0, 0);
+
+/* YOUR COLORS */
+.name1 {
+    color: rgb(237, 165, 65);
+    background: rgba(78, 91, 133, 0.8);
 }
-.pictures {
-    display: flex;
+.name2 {
+    color: rgb(239, 231, 8);
+    background: rgba(40, 150, 80, 0.8);
+}
+.name3 {
+    color: rgb(106, 90, 194);
+    background: rgba(208, 222, 145, 0.8);
+}
+.name4 {
+    color: rgb(161, 238, 147);
+    background: rgba(60, 77, 192, 0.8);
+}
+.name5 {
+    color: rgb(147, 238, 238);
+    background: rgba(118, 41, 41, 0.8);
+}
+.name6 {
+    color: rgb(245, 0, 139);
+    background: rgba(34, 34, 35, 0.8);
+}
+
+/* HISTORY */
+.history-section {
+    background-color: #d9d892;
+}
+
+.history-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* FRAME (FIXED VERSION) */
+.frame-box {
+    border: 15px solid #c45454;
+    box-shadow: -3px -3px 12px #b63a3a;
+    max-width: 400px;
+    margin: auto;
+}
+
+.frame-border {
+    border: 30px solid white;
+}
+
+.frame-img {
+    width: 100%;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 576px) {
+    .title-box {
+        font-size: 1.6rem;
+    }
+
+    .people img {
+        max-height: 150px;
+    }
+
+    .frame-border {
+        border: 15px solid white;
+    }
+}
+
+/* TITLE */
+.section-title {
+    font-family: Oswald;
+    font-size: 2.5rem;
+    background: rgb(223, 126, 81);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+
+/* TEAM */
+.people {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.people img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* COLORS */
+.one {
+    background: rgb(120, 87, 181);
+}
+.two {
+    background: rgb(135, 69, 69);
+}
+.three {
+    background: rgb(64, 193, 111);
+}
+.four {
+    background: rgb(209, 230, 109);
+}
+.five {
+    background: rgb(38, 37, 68);
+}
+.six {
+    background: rgb(153, 97, 60);
+}
+
+/* HOVER */
+.box {
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+/* NAME */
+.name {
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+/* HISTORY */
+.history-text {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* FRAME (FIXED VERSION) */
+.frame-box {
+    border: 15px solid #c45454;
+    box-shadow: -3px -3px 12px #b63a3a;
+    max-width: 400px;
+    margin: auto;
+}
+
+.frame-border {
+    border: 30px solid white;
+}
+
+.frame-img {
+    width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .people img {
+        max-height: px;
+    }
+
+    .frame-border {
+        border: 15px solid white;
+    }
 }
